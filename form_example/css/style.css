@@ -8,7 +8,7 @@
 }
 
 body{
-  font-family: ;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -49,9 +49,40 @@ h1,h2,h3,h4,h5,h6,p {
   box-shadow: 0 3px 30px rgba(0, 0, 0, 0.3);
 }
 
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 64px;
+  border: 2px solid #fefefe;
+  color: #fefefe;
+  text-decoration: none;
+  border-radius: 26px;
+  /* cursor: pointer; */
+
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn.btn--primary {
+  background-color: #38B591;
+  border: 2px solid #38B591;
+  color: #fefefe;
+}
+
+.btn.btn--secondary {  
+  border: 2px solid #fefefe;
+  color: #fefefe;
+}
+
 /*----------------------*\
   Styles for signup Card
 \*----------------------*/
+/* common */
 .signup {
   width: 960px;
   height: 640px;
@@ -69,6 +100,23 @@ h1,h2,h3,h4,h5,h6,p {
   height: 100%;
 }
 
+.signup__title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.signup__para {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.signup__para--sm {
+  font-size: 14px;
+}
+
+/* welcome */
 .signup__welcome {
   background-image: url("../images/background.jpg");
   background-position: center;
@@ -85,4 +133,20 @@ h1,h2,h3,h4,h5,h6,p {
   bottom: 0;
   background: linear-gradient(#3AA9AC, #4CBF9A);
   opacity: 0.9;
+}
+
+.signup__welcome .signup__title,
+.signup__welcome .signup__para {
+  color: #fefefe;
+}
+
+/* form */
+.signup__form {
+  background-color: #fefefe;
+}
+.signup__form .signup__title {
+  color: #38B591;
+}
+.signup__form .signup__para {
+  color: #666;
 }
