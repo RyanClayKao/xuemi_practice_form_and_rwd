@@ -1,0 +1,49 @@
+/*----------------------*\
+  Global
+\*----------------------*/
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: ;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0px;
+}
+
+
+/*----------------------*\
+  Layout
+\*----------------------*/
+.wrapper {
+  background-color: #ccc;
+  height: 100vh; /* viewport height */
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*----------------------*\
+  Components
+\*----------------------*/
+.card {
+  background-color: #fefefe;
+  border-radius: 8px;
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.3);
+}
+
+/*----------------------*\
+  Styles for signup Card
+\*----------------------*/
+.signup {
+  width: 960px;
+  height: 640px;
+}
