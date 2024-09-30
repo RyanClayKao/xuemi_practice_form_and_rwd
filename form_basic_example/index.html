@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    textarea {
+      max-width: 300px;
+      resize: none;
+    }
+  </style>
 </head>
 <body>
   <!-- 表單元件 -->
@@ -37,6 +43,16 @@
     <label for="woman">
       <input type="radio" name="gender" value="woman" id="woman">女性
     </label>
+
+    <!-- select option -->
+    <label for="Location">出生地：</label>
+    <select name="country" id="Location">
+      <option value="1">高雄市</option>
+      <option value="2">台北市</option>
+    </select>
+
+    <!-- textarea -->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
 
     <!-- input submit 提交 -->
     <!-- value 可以修改按鈕上的文字 -->
