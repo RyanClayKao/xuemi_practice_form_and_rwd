@@ -1,0 +1,30 @@
+/*----------------------*\
+  Global
+\*----------------------*/
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "微軟正黑體";
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0px;
+}
+
+
+/*----------------------*\
+  Layout
+\*----------------------*/
+.wrapper {
+  background-color: #ccc;
+  min-height: 100vh; /* viewport height */
+}
+
+/*----------------------*\
+  Components
+\*----------------------*/
+
