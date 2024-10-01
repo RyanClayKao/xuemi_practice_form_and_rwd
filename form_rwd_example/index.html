@@ -1,45 +1,79 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form RWD example</title>
-  <link rel="stylesheet" href="vendor/normalize.css">
-  <link rel="stylesheet" href="vendor/bootstrap-grid.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <!-- Start main -->
-  <section class="main">
-    <!-- Start form -->
-    <div class="card apply">
-      <div class="container">
-        <form action="" class="form">
-          <h2 class="apply_title">帳戶申請表單</h2>
-          <div class="row">
-            <div class="col-lg-6">
-              <h3 class="apply__subtitle">帳戶資訊</h3>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="form__item">
-                    <label for="lastname">姓氏</label>
-                    <input type="text" id="lastname">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form RWD example</title>
+    <link rel="stylesheet" href="vendor/normalize.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Start main -->
+    <section class="main">
+      <!-- Start form -->
+      <div class="card apply">
+        <div class="container">
+          <form action="" class="form">
+            <h2 class="apply_title">帳戶申請表單</h2>
+            <div class="row">
+              <div class="col-lg-6">
+                <h3 class="apply__subtitle">帳戶資訊</h3>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form__item">
+                      <label for="lastname">姓氏</label>
+                      <input type="text" id="lastname" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form__item">
+                      <label for="firstname">名字</label>
+                      <input type="text" id="firstname" />
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  456
+                <div class="form__item">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" />
+                </div>
+                <div class="form__item">
+                  <label for="phone">電話</label>
+                  <input type="phone" id="phone" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <h3 class="apply__subtitle">密碼設定</h3>
+                <div class="form__item">
+                  <label for="password_1">輸入密碼</label>
+                  <input type="password" id="password_1" />
+                </div>
+                <div class="form__item">
+                  <label for="password_2">再次輸入密碼</label>
+                  <input type="password" id="password_2" />
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              456789
+            <h3 class="apply__subtitle">通訊地址</h3>
+            <div class="form__item">
+              <label for="address">請輸入常用地址</label>
+              <input type="text" id="address" />
             </div>
-          </div>
-        </form>
+            <div class="form__item">
+              <div class="checkbox-item">
+                <input type="checkbox" />
+                <label>閱讀條款</label>
+              </div>
+            </div>
+            <div class="form__btn-group">
+              <input type="submit" class="btn btn--primary" value="確認送出" />
+              <input type="reset" class="btn btn--secondary" value="重新填寫" />
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
-    <!-- End form -->
-  </section>
-  <!-- End main -->
-</body>
+      <!-- End form -->
+    </section>
+    <!-- End main -->
+  </body>
 </html>
