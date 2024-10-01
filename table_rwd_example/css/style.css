@@ -71,4 +71,31 @@ h1,h2,h3,h4,h5,h6,p {
   color: #fff;
 }
 
+.table td {
 
+}
+
+/* table style for RWD */
+.table-container {
+  
+}
+
+.table-container__inner {
+  
+}
+
+@media (max-width: 576px){
+  .table-container {
+    /* border: solid 1px #000; */
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 16px;
+    overflow-x: scroll;
+  }
+
+  .table-container__inner {
+    /* border: solid 1px red; */
+    min-width: 576px;
+    /* padding-right: 16px; */
+  }
+}
