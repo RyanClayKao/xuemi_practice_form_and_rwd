@@ -1,0 +1,68 @@
+/*----------------------*\
+  Global
+\*----------------------*/
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "微軟正黑體";
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0px;
+}
+
+
+/*----------------------*\
+  Layout
+\*----------------------*/
+.wrapper {
+  background-color: #ccc;
+  min-height: 100vh; /* viewport height */
+}
+
+/*----------------------*\
+  Components
+\*----------------------*/
+.card {
+  padding: 16px;
+  background-color: #fefefe;  
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* btn */
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 64px;
+  border: 0;
+  color: #fefefe;
+  text-decoration: none;
+  border-radius: 26px;
+
+  font-family: "微軟正黑體";
+  cursor: pointer;
+}
+
+.btn.btn--primary {
+  background-color: #ff3B68;
+}
+
+.btn.btn--secondary {
+  background-color: #333;
+}
+
+input.btn:focus {
+  outline: 0;
+}
+
+/* Styles for apply */
+.apply {
+  
+}
+
