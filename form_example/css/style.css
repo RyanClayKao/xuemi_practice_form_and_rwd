@@ -65,6 +65,10 @@ h1,h2,h3,h4,h5,h6,p {
   transition: transform 0.2s;
 }
 
+input.btn:focus {
+  outline: 0;
+}
+
 .btn:hover {
   transform: scale(1.05);
 }
@@ -111,6 +115,30 @@ h1,h2,h3,h4,h5,h6,p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* input */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  background-color: #efefef;
+  line-height: 48px;
+  padding: 0px 8px;
+  width: 100%;
+  border-radius: 4px;
+  color: #333;
+  border: solid 1px #efefef;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  outline: 0;
+  border-color: #38B591;
+}
+
 
 /*----------------------*\
   Styles for signup Card
