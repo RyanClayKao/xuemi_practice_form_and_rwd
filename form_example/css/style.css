@@ -49,6 +49,7 @@ h1,h2,h3,h4,h5,h6,p {
   box-shadow: 0 3px 30px rgba(0, 0, 0, 0.3);
 }
 
+/* btn */
 .btn {
   display: inline-block;
   vertical-align: top;
@@ -77,6 +78,38 @@ h1,h2,h3,h4,h5,h6,p {
 .btn.btn--secondary {  
   border: 2px solid #fefefe;
   color: #fefefe;
+}
+
+/* social btns */
+.social-btns {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.social-btns__item {
+  width: 44px;
+  height: 44px;
+  border: solid 1px #ccc;
+  border-radius: 50%;
+  color: #333;  
+  transition: all 0.2s;
+}
+
+.social-btns__item:not(:last-child){
+  margin-right: 8px;
+}
+
+.social-btns__item:hover {
+  border-color: #38B591;
+  color: #38B591;
+}
+
+.social-btns__item i {
+  font-size: 18px;  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*----------------------*\
