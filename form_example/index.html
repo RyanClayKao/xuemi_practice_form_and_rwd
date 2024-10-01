@@ -4,16 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="vendor/normalize.css" />
     <link rel="stylesheet" href="vendor/bootstrap-grid.css" />
-    <link rel="stylesheet" href="vendor/fontawesome-free-5.13.0-web/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="vendor/fontawesome-free-5.13.0-web/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="wrapper">
       <!-- Start main -->
       <section class="main">
+        <!-- Start some decorations -->
+        <div class="circle"></div>
+        <div class="rect"></div>
+        <!-- End some decorations -->
+
         <!-- Start Form -->
         <div class="card signup">
           <div class="row no-gutters">
@@ -21,8 +32,8 @@
               <div class="signup__welcome signup__center">
                 <h4 class="signup__title">Welcome Back!</h4>
                 <p class="signup__para">
-                  To keep connected with us please 
-                  <br>
+                  To keep connected with us please
+                  <br />
                   login with your personal info
                 </p>
                 <a href="#!" class="btn btn--secondary">SIGN IN</a>
@@ -42,19 +53,28 @@
                     <i class="fab fa-linkedin-in"></i>
                   </a>
                 </div>
-                <p class="signup__para signup__para--sm">or use your email for registration:</p>
+                <p class="signup__para signup__para--sm">
+                  or use your email for registration:
+                </p>
                 <form action="" class="form">
-                  <div class="input-group">
+                  <div class="input-group form__item">
                     <i class="far fa-user"></i>
-                    <input type="text">
+                    <input type="text" placeholder="Name" />
                   </div>
-                  <div class="input-group">
+                  <div class="input-group form__item">
                     <i class="far fa-envelope"></i>
-                    <input type="email">
+                    <input type="email" placeholder="Email" />
                   </div>
-                  <div class="input-group">
+                  <div class="input-group form__item">
                     <i class="fas fa-unlock-alt"></i>
-                    <input type="password">
+                    <input type="password" placeholder="Password" />
+                  </div>
+                  <div class="input-group form__item form__item--center">
+                    <input
+                      type="submit"
+                      class="btn btn--primary"
+                      value="SIGN UP"
+                    />
                   </div>
                 </form>
               </div>
